@@ -2,7 +2,6 @@ module Render (renderRandomImage) where
 
 import Codec.Compression.GZip (decompress)
 import qualified Data.ByteString.Lazy as BS
-import Data.Functor
 import System.Random
 
 render n = let s = " .:oO@" in s !! (fromIntegral n * length s `div` 256)
